@@ -1,0 +1,38 @@
+# api-contract.yaml 示例（OpenAPI 3.0 简化版）
+# Leader 在 Phase 1 生成，前后端 Worker 以此为唯一真相源
+# 只需 paths + schemas，不需要完整 OpenAPI spec
+paths:
+  /api/enterprises/:
+    get:
+      summary: 获取企业列表
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Enterprise' }
+  /api/coupling/calculate:
+    post:
+      summary: 耦合计算
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/CouplingRequest' }
+components:
+  schemas:
+    Enterprise:
+      type: object
+      required: [id, name, lat, lng]
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        lat: { type: number }
+        lng: { type: number }
+    CouplingRequest:
+      type: object
+      required: [scenario_id, hazard_type]
+      properties:
+        scenario_id: { type: string }
+        hazard_type: { type: string, enum: [typhoon, rainstorm, lightning, heatwave] }

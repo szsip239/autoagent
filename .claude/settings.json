@@ -1,0 +1,8 @@
+{
+  "enabledPlugins": {
+    "claude-code-harness@claude-code-harness-marketplace": false
+  },
+  "localPlugins": [
+    "./autoagent-plugin"
+  ]
+}

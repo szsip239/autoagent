@@ -1,0 +1,20 @@
+{
+  "name": "autoagent",
+  "version": "0.4.0",
+  "description": "AutoAgent — 自动迭代 Agent 系统插件。五层流程门控 + 跨项目经验积累。入口命令 /aa",
+  "author": {
+    "name": "clawdbot"
+  },
+  "license": "MIT",
+  "skills": [
+    "./skills/"
+  ],
+  "agents": [
+    "./agents/requirements-analyst.md",
+    "./agents/data-engineer.md",
+    "./agents/tc-creator.md",
+    "./agents/tech-strategist.md",
+    "./agents/evaluator.md",
+    "./agents/critical-thinker.md"
+  ]
+}

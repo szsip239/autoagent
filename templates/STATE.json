@@ -1,0 +1,88 @@
+{
+  "_schema": "autoagent/state/v1",
+  "_doc": "项目生命周期状态追踪。由 gate-check.sh 自动维护，勿手动编辑。",
+  "project": "",
+  "created_at": "",
+  "current_layer": 0,
+  "layers": {
+    "0": {
+      "status": "pending",
+      "entered_at": null,
+      "gate_passed_at": null,
+      "gate_result": null,
+      "artifacts": {
+        "REQUIREMENTS.md": false,
+        "DATA_QUALITY.md": false
+      },
+      "gate_conditions": {
+        "requirements_confirmed": false,
+        "no_red_blockers": false
+      }
+    },
+    "0.5": {
+      "status": "pending",
+      "entered_at": null,
+      "gate_passed_at": null,
+      "gate_result": null,
+      "artifacts": {},
+      "gate_conditions": {
+        "tc_exists": false,
+        "coverage_matrix_complete": false,
+        "user_reviewed": false
+      }
+    },
+    "1": {
+      "status": "pending",
+      "entered_at": null,
+      "gate_passed_at": null,
+      "gate_result": null,
+      "artifacts": {
+        "TECH_SELECTION.md": false,
+        "DECISIONS.md": false
+      },
+      "gate_conditions": {
+        "poc_data_compared": false,
+        "user_confirmed": false
+      }
+    },
+    "2": {
+      "status": "pending",
+      "entered_at": null,
+      "gate_passed_at": null,
+      "gate_result": null,
+      "artifacts": {
+        "Plans.md": false
+      },
+      "gate_conditions": {
+        "all_tasks_done": false
+      }
+    },
+    "3": {
+      "status": "pending",
+      "entered_at": null,
+      "gate_passed_at": null,
+      "gate_result": null,
+      "artifacts": {
+        "EVAL_REPORT.md": false
+      },
+      "gate_conditions": {
+        "weighted_score_ge_80": false,
+        "no_hard_fail": false
+      },
+      "eval_score": null,
+      "eval_decision": null
+    },
+    "4": {
+      "status": "pending",
+      "entered_at": null,
+      "gate_passed_at": null,
+      "gate_result": null,
+      "artifacts": {},
+      "gate_conditions": {
+        "review_passed": false,
+        "docs_updated": false
+      }
+    }
+  },
+  "history": []
+}

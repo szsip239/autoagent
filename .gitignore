@@ -1,0 +1,27 @@
+# 只读参考源码（不纳入 autoagent git）
+ClawTeam/
+OpenViking/
+claude-code-harness/
+promptfoo/
+deepeval/
+agency-agents/
+references/repos/
+
+# Claude Code 运行时状态（所有层级）
+**/.claude/state/
+**/.claude/sessions/
+**/.claude/logs/
+**/.claude/memory/
+
+# 目标项目（含数据/交付物，不纳入框架仓库）
+project/
+
+# 运行时产物
+**/__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Claude Code 本地设置
+.claude/settings.local.json

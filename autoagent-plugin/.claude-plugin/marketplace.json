@@ -1,0 +1,25 @@
+{
+  "name": "autoagent-marketplace",
+  "owner": {
+    "name": "clawdbot"
+  },
+  "metadata": {
+    "description": "AutoAgent 自动迭代 Agent 系统 — 五层流程门控 + 跨项目经验积累",
+    "version": "0.4.0"
+  },
+  "plugins": [
+    {
+      "name": "autoagent",
+      "source": "./",
+      "description": "五层流程门控插件。/aa 唯一入口，8 个 skills + 6 agents + 4 hooks",
+      "category": "workflow",
+      "tags": [
+        "autoagent",
+        "workflow",
+        "gate-check",
+        "orchestration",
+        "evaluation"
+      ]
+    }
+  ]
+}
